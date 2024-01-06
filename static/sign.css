@@ -1,0 +1,96 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scrollbars from appearing outside the textarea */
+    font-family: Arial, sans-serif; /* Optional: choose any font family you like */
+    background-image:  url("../static/images/signin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.title-container{
+    font-weight: bold;
+    margin-top: -40px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+/* Making the textarea take the full viewport height */
+#fullPageTextarea {
+    width: 100%;
+    height: 100vh; /* Using vh (viewport height) units to ensure it's always 100% of the viewport height */
+    border: none;
+    resize: none;
+    outline: none; 
+    font-size: 1rem; /* Optional: Adjust the font size as needed */
+}
+
+table, th, td{
+
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+#togglePassword {
+    color: brown;
+    position: absolute;
+    right: 510px; /* adjust as necessary */
+    top: 50%;
+    transform: translateY(-10%);
+    transform: translateX(-460%);
+    cursor: pointer;
+}
+.form-group {   
+    position: relative;
+}
+
+.container{
+    margin-top: 10%;
+}
+#email{
+
+    width:50%;
+    border-radius: 2px;
+    
+
+}
+
+#password{
+    width: 50%;
+    border-radius: 2px;
+}
+
+#successMessage{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    margin-right: 50%;
+    width: fit-content;
+}
+
+#registerButton{
+
+  border: none;
+  border-radius: 8px;
+  padding: 0 15px;
+  text-align: right;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 120px;
+  background-color: #07a1f4;
+
+  /*margin-top: 0px;*/
+
+}
